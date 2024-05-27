@@ -11,6 +11,8 @@ body {
     background: url('https://tse4.mm.bing.net/th?id=OIP.SnQJ0YzYHJ4vPwQ1ho8b5AHaEo&pid=Api&P=0&h=220') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Arial', sans-serif;
+    /* Add Davao City-inspired colors */
+    background-color: #E3F2FD; /* Light blue reminiscent of Davao's clear skies */
 }
 
 /* Add styles for the airplane image */
@@ -51,4 +53,18 @@ body {
 @keyframes fly {
     0% { left: -200px; } /* Start off-screen */
     100% { left: 110%; } /* Move across the screen */
+}
+
+/* Add Davao City-inspired styles */
+.container {
+    /* Use colors inspired by Davao's nature */
+    background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+    border: 3px solid #1565C0; /* Dark blue border representing the sea */
+}
+
+.text {
+    color: #1565C0; /* Dark blue color for text */
+    background: none; /* Remove gradient background */
+    -webkit-text-fill-color: #1565C0; /* Dark blue text */
+    text-shadow: none; /* Remove text shadow */
 }

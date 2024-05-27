@@ -7,9 +7,19 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url('https://i.pinimg.com/originals/cd/ea/76/cdea769e8ff7e43db21aae79d4143d87.jpg') no-repeat center center fixed;
+    position: relative;
+    background: url('https://tse4.mm.bing.net/th?id=OIP.SnQJ0YzYHJ4vPwQ1ho8b5AHaEo&pid=Api&P=0&h=220') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Arial', sans-serif;
+}
+
+/* Add styles for the airplane image */
+.airplane {
+    position: absolute;
+    top: 10%;
+    left: -300px; /* Start the airplane off-screen */
+    width: 300px; /* Adjust the width of the airplane */
+    animation: fly 10s linear infinite;
 }
 
 .container {
@@ -26,7 +36,7 @@ body {
     font-weight: bold;
     font-family: 'Anton', sans-serif;
     color: #333;
-    background: linear-gradient(135deg, #4a90e2, #f06);
+    background: linear-gradient(135deg, #5c3ab9, #1e0242); /* Update gradient colors */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -35,4 +45,10 @@ body {
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
+}
+
+/* Define animation keyframes for flying effect */
+@keyframes fly {
+    0% { left: -200px; } /* Start off-screen */
+    100% { left: 110%; } /* Move across the screen */
 }
